@@ -6,14 +6,14 @@ public class RewardValue {
         this.cash = cashValue;
         this.miles = cashValue / milesRate;
     }
-    public RewardValue(float MilesValue){
+    public RewardValue(double MilesValue,boolean isMiles){
         this.miles = MilesValue;
         this.cash =  MilesValue * milesRate;
     }
     public double getMilesValue(){
         return miles;
     }
-    public double getCash(){
+    public double getCashValue(){
         return cash;
     }
 }
